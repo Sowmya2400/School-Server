@@ -65,6 +65,15 @@ public class StudentController {
 		return response;
 	}
 	
+	@GetMapping("/test")
+	String hello(){
+		return "Working";
+	}
+
+	@PostMapping(value="/test1")
+	String msg(){
+		return "Hurrayy!!";
+	}
 	
 	//http://localhost:9095/viewMarks
 	@PostMapping(value = "/viewMarks")
