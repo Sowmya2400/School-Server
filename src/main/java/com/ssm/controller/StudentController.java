@@ -65,6 +65,11 @@ public class StudentController {
 		return response;
 	}
 	
+	@GetMapping("/")
+	String hi(){
+		return "Yessss";
+	}
+	
 	@GetMapping("/test")
 	String hello(){
 		return "Working";
